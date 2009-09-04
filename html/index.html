@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Regex</title>
+<script>
+// var Templort = function(template, keys) {
+// return template.replace(/\#\{(.*?)\}/g, function(x,y) { return keys[y]});
+// };
+
+String.prototype.xpnd = function(keys) {
+  return this.replace(/\#\{(.*?)\}/g, function(x,y) { return keys[y]});
+}
+
+</script>
+</head>
+<body>
+  <script>
+  document.write("#{hello} world and #{hello} world the second #{gotta} #{ruby}".xpnd({hello:"Hello real", gotta:"love", ruby: "yea"}))
+  </script>
+</body>
+</html>
