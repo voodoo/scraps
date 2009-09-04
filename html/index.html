@@ -2,12 +2,15 @@
 <html>
 <head>
 <title>Regex</title>
-<script src="js/pros.js"></script>
+<script src="js/load.js"></script>
+<script>
+loadWithCallback('pros', function(){alert(2)})
+</script>
 </head>
 <body>
   <script>
-  var doc = "Heck yea here it goes ... #{hello} world and #{hello} world the second #{gotta} #{ruby}"
-  document.write(doc.xpnd({hello:"Hello real", gotta:"love", ruby: "yea"}))
+  var doc = "Heck yea here it goes ... #{hello} world the second #{gotta} love #{ruby}"
+  document.write(doc.xpnd({hello:"Hello real", gotta:"love", ruby: "yea ruby"}))
   </script>
 </body>
 </html>
