@@ -15,7 +15,8 @@ String.prototype.xpnd = function(keys) {
 </head>
 <body>
   <script>
-  document.write("#{hello} world and #{hello} world the second #{gotta} #{ruby}".xpnd({hello:"Hello real", gotta:"love", ruby: "yea"}))
+  var doc = "#{hello} world and #{hello} world the second #{gotta} #{ruby}"
+  document.write(doc.xpnd({hello:"Hello real", gotta:"love", ruby: "yea"}))
   </script>
 </body>
 </html>
