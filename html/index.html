@@ -2,20 +2,11 @@
 <html>
 <head>
 <title>Regex</title>
-<script>
-// var Templort = function(template, keys) {
-// return template.replace(/\#\{(.*?)\}/g, function(x,y) { return keys[y]});
-// };
-
-String.prototype.xpnd = function(keys) {
-  return this.replace(/\#\{(.*?)\}/g, function(x,y) { return keys[y]});
-}
-
-</script>
+<script src="js/pros.js"></script>
 </head>
 <body>
   <script>
-  var doc = "#{hello} world and #{hello} world the second #{gotta} #{ruby}"
+  var doc = "Heck yea here it goes ... #{hello} world and #{hello} world the second #{gotta} #{ruby}"
   document.write(doc.xpnd({hello:"Hello real", gotta:"love", ruby: "yea"}))
   </script>
 </body>
