@@ -3,7 +3,7 @@ String.prototype.xpnd = function(keys) {
 }
 
 String.prototype.trim = function(){
-  return this.replace(/^\s+/,'').replace(/\s+$/,'')
+  return this.replace(/^\s*(\S*(\s+\S+)*)\s*$/, '$1');
 }    
 
 String.prototype.empty = function(){
