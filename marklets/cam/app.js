@@ -1,1 +1,1 @@
-alert('loaded app')
+alert('loaded app');

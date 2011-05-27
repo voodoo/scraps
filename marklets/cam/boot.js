@@ -1,4 +1,4 @@
-var URL = 'https://github.com/voodoo/scraps/raw/master/marklets/';
+var URL = 'https://github.com/voodoo/scraps/raw/master/marklets/cam/';
 
 function css(href){
 	var link = $("<link>");
