@@ -8,7 +8,7 @@ function booted($){
 		        rel: 'stylesheet',
 		        href: URL + href
 		});
-		link.onload(function(){
+		link.onload = function(){
 			console.log('css loaded ' + href); 
 		});
 		$("head").append( link ); 
