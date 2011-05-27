@@ -10,7 +10,7 @@ function booted($){
 		});
 		link.onload = function(){
 			console.log('css loaded ' + href); 
-		});
+		};
 		$("head").append( link ); 
 	
 	}
